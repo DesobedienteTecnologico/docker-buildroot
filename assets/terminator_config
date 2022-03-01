@@ -1,0 +1,35 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+  title_font = Ubuntu 18
+[keybindings]
+  next_tab = <Primary><Shift>Right
+  prev_tab = <Primary><Shift>Left
+  next_profile = <Primary><Shift>p
+[profiles]
+  [[default]]
+    background_color = "#ececec"
+    background_darkness = 0.8
+    cursor_color = "#fafafa"
+    font = Monospace 18
+    foreground_color = "#000000"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#204a87:#aa00aa:#00aaaa:#babdb6:#555555:#ff5555:#4e9a06:#c17d11:#3465a4:#ff55ff:#55ffff:#babdb6"
+    use_system_font = False
+  [[night]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#fafafa"
+    font = Monospace 18
+    foreground_color = "#ffffff"
+    palette = "#000000:#aa0000:#00aa00:#e9b96e:#729fcf:#aa00aa:#00aaaa:#ffffff:#555555:#ff5555:#55ff55:#e9b96e:#729fcf:#ff55ff:#55ffff:#eeeeec"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+      command = ""
+[plugins]
